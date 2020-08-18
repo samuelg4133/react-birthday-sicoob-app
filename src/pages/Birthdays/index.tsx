@@ -1,11 +1,11 @@
-import React from 'react';
-
+import React from "react";
+import { useParams } from "react-router-dom";
 import Header from "../../components/Header";
 
-import Container from "./styles";
+const Birthdays: React.FC = () => {
+  const { mes } = useParams();
 
-import { useRouteMatch } from 'react-router-dom';
-
-
+  return <Header title={mes}></Header>;
+};
 
 export default Birthdays;

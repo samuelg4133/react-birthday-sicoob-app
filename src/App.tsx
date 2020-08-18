@@ -1,15 +1,17 @@
 import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import {ThemeProvider} from "styled-components";
+
+import Colors  from "./styles/colors";
 import GlobalStyles from "./styles/global";
+
+import Routes from "./routes";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
+    <ThemeProvider theme={Colors}>
+        <Routes/>
       <GlobalStyles />
-    </>
+    </ThemeProvider>
   );
 }
 

@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 const Birthdays: React.FC = () => {
   const { mes } = useParams();
 
-  return <Header title={mes}></Header>;
+  return <Header title={mes}/>;
 };
 
 export default Birthdays;
